@@ -6,12 +6,19 @@ body{
     margin: 0;
 }
 
+nav{
+  height: 100%;
+}
+
+
 ul {
     list-style-type: none; /*this make the bullets disapear*/
-    margin: 0;
-    padding: 0;
+    padding: 10px 0px;
+    margin: 0px;
     top: 0;
     width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    
     /*width: 25%;*/
     /*height: 100%;Full Height*/
     /*position: fixed;  Make it stick, even on scroll (it can be 'sticky' aswell) - the diff is that
@@ -42,13 +49,12 @@ ul {
     text-decoration: none;
   }
   li a.active {
-    background-color: #DC143C;
-    color: white;
+    font-weight: bold;
+    color: #DC143C;
   }
 
   li a:hover:not(.active){
-    background-color: #FF0000;
-    color: white;
+    color: #FF0000;;
   }
 
   li.dropdown{
@@ -65,19 +71,70 @@ ul {
   }
 
   .dropdown-content a {
+    animation: growDown 300ms ease-in-out forwards;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    transform-origin: top center;
   }
 
   .dropdown-content a:hover {
-    background-color: #499e15;
+    color: #FF0000;;
   }
 
   .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+@keyframes rotateX {
+
+  0% {
+
+      opacity: 0;
+
+      transform: rotateX(-90deg);
+
+  }
+
+  50% {
+
+      transform: rotateX(-20deg);
+
+  }
+
+  100% {
+
+      opacity: 1;
+
+      transform: rotateX(0deg);
+
+  }
+
+}
+
+@keyframes growDown {
+
+  0% {
+
+      transform: scaleY(0)
+
+  }
+
+  80% {
+
+      transform: scaleY(1.1)
+
+  }
+
+  100% {
+
+      transform: scaleY(1)
+
+  }
+
 }
 
   /*responsive stuff*/
