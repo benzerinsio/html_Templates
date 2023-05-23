@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "stylus": "^0.59.0"
+  },
+  "scripts": {
+    "compile": "stylus style.styl -o dist"
+  }
+}
