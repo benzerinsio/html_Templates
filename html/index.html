@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://kit.fontawesome.com/9744882435.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/style.css">
     <meta charset="UTF-8" />
     <title>Creating Navbar for MPL</title>
@@ -8,30 +9,29 @@
 
   <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a class="active" href="#">PRINCIPAL</a></li>
-                <li><a href="#">QUEM SOMOS</a></li>
-                <li class="dropdown">
-                    <a class="dropbtn" href="#">SEGUROS</a><!--dropdown here-->
-                    <div class="dropdown-menu">
-                        <a href="#">Para sua empresa</a>
-                        <a href="#">Para você ou sua empresa</a>
-                    </div>
-                </li>
-                <li><a href="#">PARCEIROS</a></li>
-                <li class="dropdown">
-                    <a class="dropbtn" href="#">SINISTROS</a><!--dropdown here-->
-                    <div class="dropdown-content">
-                      <span class="left-part"></span>
-                      <span class="right-part"></span>
-                        <a class="dropdown-item-1" href="#">Automóveis</a>
-                        <a class="dropdown-item-2" href="#">Demais produtos</a>
-                    </div>
-                </li>
-                <li><a href="#">OAB</a></li>
-                <li><a href="#">FALE CONOSCO</a></li>
-              </ul> 
+              <li><img src="./imgs/mplogo.png" alt="Logo da Marca" class="logotype"></li>
+              <li><a class="active" href="#">PRINCIPAL</a></li>
+              <li><a href="#">QUEM SOMOS</a></li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">SEGUROS <i class="fa-sharp fa-solid fa-caret-down fa-2xs"></i></a><!--dropdown here-->
+                <div class="dropdown-menu">
+                  <a href="#">Para sua empresa</a>
+                  <a href="#">Para você ou sua empresa</a>
+                </div>
+              </li>
+              <li><a href="#">PARCEIROS</a></li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">SINISTROS <i class="fa-sharp fa-solid fa-caret-down fa-2xs"></i></a><!--dropdown here-->
+                <div class="dropdown-content">
+                  <a class="dropdown-item-1" href="#">Automóveis</a>
+                  <a class="dropdown-item-2" href="#">Demais produtos</a>
+                </div>
+              </li>
+              <li><a href="#">OAB</a></li>
+              <li><a href="#">FALE CONOSCO</a></li>
+            </ul> 
         </nav>
     </header>
   </body>

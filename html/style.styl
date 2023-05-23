@@ -1,21 +1,21 @@
 *{
+  background-color: #f1f1f1;
   margin: 0;
   padding: 0;
 }
 
-nav{
-  height: 100%;
+.navbar{
+  height: 94px;
+  width: 100%;
 }
 
-
-ul {
+.navbar ul {
     list-style-type: none; /*this make the bullets disapear*/
-    padding: 10px 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 15px 125px;
     top: 0;
-    width: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
-    
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    background-color: white;
     /*width: 25%;*/
     /*height: 100%;Full Height*/
     /*position: fixed;  Make it stick, even on scroll (it can be 'sticky' aswell) - the diff is that
@@ -24,13 +24,12 @@ ul {
     /*overflow: auto;  Enable scrolling if the sidenav has too much content */
     overflow: hidden;
     /*border: 1px solid #555;*/
-    background-color: #f1f1f1;
   }
-  
+
   li{
     float: left;
-    display: inline;
     text-align: center;
+    background-color: white;
     /*border-right: 1px solid #555;*/
   }
 
@@ -39,7 +38,13 @@ ul {
     float: right;
   }
 
+  .logotype{
+    width: 241px;
+    height: 90px;
+    }
+
   li a{
+    background-color: white; 
     display: block;
     color: #000;
     padding: 14px 16px;
@@ -61,7 +66,6 @@ ul {
   .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -79,7 +83,6 @@ ul {
 
   .dropdown-content
     position: absolute;
-    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -97,34 +100,6 @@ ul {
   opacity: 0;
 }
 
-.dropdown-content span{
-  display: inline-block;
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  background-color: black;
-  border-radius: 40px;  
-  transition: .5s;
-  }
-
-  .dropdown-content span:nth-child(1){
-    left: 24px;
-    transform: rotate(45deg); 
-  }
-
-  .dropdown-content:hover span:nth-child(1){
-    transform: rotate(135deg);
-  }
-
-  .dropdown-content span:nth-child(2){
-    right: 24px;
-    transform: rotate(-45deg); 
-  }
-
-  .dropdown-content:hover span:nth-child(2){
-    transform: rotate(135deg);
-  }
-
 .dropdown-menu a:hover {
   color: #FF0000;
 }
@@ -140,6 +115,15 @@ ul {
 .dropdown:hover .dropdown-content a{
   display: block;
 }
+
+.fa-caret-down{
+  transition: .5s;
+  transform: rotate(0deg);
+  }
+
+.dropdown:hover .fa-caret-down {
+  transform: rotateX(180deg);
+  }
 
 @keyframes rotateX {
 
