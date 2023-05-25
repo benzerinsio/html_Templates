@@ -10,29 +10,48 @@
   <body>
     <header>
         <nav class="navbar">
-            <ul>
-              <li><img src="./imgs/mplogo.png" alt="Logo da Marca" class="logotype"></li>
-              <li><a class="active" href="#">PRINCIPAL</a></li>
-              <li><a href="#">QUEM SOMOS</a></li>
-              <li class="dropdown">
+            <ul class="ul-navbar">
+              <li class="li-navbar"><img src="./imgs/logo/mplogo.png" alt="Logo da Marca" class="logotype"></li>
+              <li class="li-navbar"><a class="active" href="#">PRINCIPAL</a></li>
+              <li class="li-navbar"><a href="#">QUEM SOMOS</a></li>
+              <li class="li-navbar dropdown">
                 <a class="dropbtn" href="#">SEGUROS <i class="fa-sharp fa-solid fa-caret-down fa-2xs"></i></a><!--dropdown here-->
                 <div class="dropdown-menu">
                   <a href="#">Para sua empresa</a>
                   <a href="#">Para você ou sua empresa</a>
                 </div>
               </li>
-              <li><a href="#">PARCEIROS</a></li>
-              <li class="dropdown">
+              <li class="li-navbar"><a href="#">PARCEIROS</a></li>
+              <li class="li-navbar dropdown">
                 <a class="dropbtn" href="#">SINISTROS <i class="fa-sharp fa-solid fa-caret-down fa-2xs"></i></a><!--dropdown here-->
                 <div class="dropdown-content">
                   <a class="dropdown-item-1" href="#">Automóveis</a>
                   <a class="dropdown-item-2" href="#">Demais produtos</a>
                 </div>
               </li>
-              <li><a href="#">OAB</a></li>
-              <li><a href="#">FALE CONOSCO</a></li>
+              <li class="li-navbar"><a href="#">OAB</a></li>
+              <li class="li-navbar"><a href="#">FALE CONOSCO</a></li>
             </ul> 
         </nav>
     </header>
+    <div>
+      <ul class="top-carousel">
+        <li>
+          <input type="radio" id="slide1" name="slide" checked>
+          <label for="slide1"></label>
+          <img src="imgs/slider/mpl1.jpg"/>
+        </li>
+        <li>
+          <input type="radio" id="slide2" name="slide">
+          <label for="slide2"></label>
+          <img src="imgs/slider/mpl2.jpg" />
+        </li>
+        <li>
+          <input type="radio" id="slide3" name="slide">
+          <label for="slide3"></label>
+          <img src="imgs/slider/mpl3.jpg" />
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
