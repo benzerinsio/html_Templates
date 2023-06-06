@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './navbar.js';
 import './App.css';
 
 function App() {
@@ -8,6 +9,10 @@ function App() {
         <h1>Bem-vindo à Homepage</h1>
         <p>Esta é a página inicial do meu site.</p>
       </header>
+      <div>
+      <Navbar />
+      <h1>Conteúdo da Págine</h1>
+    </div>
     </div>
   );
 }
