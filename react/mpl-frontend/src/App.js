@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from "../src/Components/Navbar/Navbar";
+import Carroussel from "../src/Components/Carrousel/Carrousel";
 
 function App() {
   return (
