@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "../src/Components/Navbar/Navbar";
-import Carrousel from "../src/Components/Carrousel/Carrousel";
+import Carrousel from "./Components/Body/Carrousel/Carrousel";
+import Experiencia from "./Components/Body/Experiencia/Experiencia";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </header>
       <body>
         <Carrousel />
+        <Experiencia />
       </body>
     </div>
   );
