@@ -1,4 +1,5 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "../src/Components/Navbar/Navbar";
 import Carrousel from "./Components/Body/Carrousel/Carrousel";
 import Experiencia from "./Components/Body/Experiencia/Experiencia";

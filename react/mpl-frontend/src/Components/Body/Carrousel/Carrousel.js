@@ -1,5 +1,5 @@
 import "./Carrousel.css";
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import companyLogo from "../../util/imgs/logo.png";
 
 function Carrousel(props) {
