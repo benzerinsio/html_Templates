@@ -1,5 +1,5 @@
 import "./Experiencia.css";
-import Card from "./Card";
+import Cardc from "./Cardc";
 
 function Experiencia() {
   const items = [
@@ -52,15 +52,19 @@ function Experiencia() {
       about: "",
     }
   ];
-
-  return (
-    <div>
-      <Card data={items[0]}/>
-      <Card data={items[1]}/>
+  /*<Card data={items[1]}/>
       <Card data={items[2]}/>
       <Card data={items[3]}/>
       <Card data={items[4]}/>
-      <Card data={items[5]}/>
+      <Card data={items[5]}/>*/
+  return (
+    <div>
+      <Cardc data={items[0]}/>
+      <Cardc data={items[1]}/>
+      <Cardc data={items[2]}/>
+      <Cardc data={items[3]}/>
+      <Cardc data={items[4]}/>
+      <Cardc data={items[5]}/>
     </div>
   );
 }
