@@ -1,17 +1,17 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "../src/Components/Navbar/Navbar";
-import Carrousel from "./Components/Body/Carrousel/Carrousel";
+import NavbarComponent from "./Components/Navbar/NavbarComponent";
+import CarouselComponent from "./Components/Body/Carousel/CarouselComponent";
 import Experiencia from "./Components/Body/Experiencia/Experiencia";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
+        <NavbarComponent />
       </header>
       <body>
-        <Carrousel />
+        <CarouselComponent />
         <Experiencia />
       </body>
     </div>

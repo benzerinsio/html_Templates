@@ -1,9 +1,9 @@
-import "./Carrousel.css";
+import "./CarouselComponent.css";
 import "holderjs";
 import Carousel from 'react-bootstrap/Carousel';
 import companyLogo from "../../util/imgs/logo.png";
 
-function Carrousel(props) {
+function CarouselComponent(props) {
   return (<Carousel>
     <Carousel.Item>
       <img
@@ -46,4 +46,4 @@ function Carrousel(props) {
   );
 }
 
-export default Carrousel;
+export default CarouselComponent;

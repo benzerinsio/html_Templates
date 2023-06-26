@@ -4,7 +4,7 @@ import "holderjs";
 import companyLogo from "../../util/imgs/logo.png";
 import { useEffect } from "react";
 
-function Cardc(props) {
+function CardComponent(props) {
   //<img className="d-block w-100" src={companyLogo} alt="First slide" />
   return (
     <Card style={{ width: '18rem' }}>
@@ -20,4 +20,4 @@ function Cardc(props) {
   );
 }
 
-export default Cardc;
+export default CardComponent;
