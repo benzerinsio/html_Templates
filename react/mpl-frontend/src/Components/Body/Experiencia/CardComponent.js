@@ -8,7 +8,7 @@ function CardComponent(props) {
   //<img className="d-block w-100" src={companyLogo} alt="First slide" />
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="../../util/imgs/experiencia_1.jpg" />
       <Card.Body>
         <Card.Title>{props.data.title}</Card.Title>
         <Card.Text>

@@ -1,14 +1,16 @@
 import "./CarouselComponent.css";
 import "holderjs";
 import Carousel from 'react-bootstrap/Carousel';
-import companyLogo from "../../util/imgs/logo.png";
+import carousel1 from "../../util/imgs/carousel_1.jpg";
+import carousel2 from "../../util/imgs/carousel_2.jpg";
+import carousel3 from "../../util/imgs/carousel_3.jpg";
 
 function CarouselComponent(props) {
   return (<Carousel>
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="holder.js/800x400?text=First slide&bg=373940"
+        src={carousel1}
         alt="First slide"
       />
       <Carousel.Caption>
@@ -19,7 +21,7 @@ function CarouselComponent(props) {
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="holder.js/800x400?text=Second slide&bg=282c34"
+        src={carousel2}
         alt="Second slide"
       />
 
@@ -31,7 +33,7 @@ function CarouselComponent(props) {
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="holder.js/800x400?text=Third slide&bg=20232a"
+        src={carousel3}
         alt="Third slide"
       />
 

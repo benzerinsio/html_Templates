@@ -1,12 +1,18 @@
 import "./Experiencia.css";
 import CardComponent from "./CardComponent";
 import CardGroup from 'react-bootstrap/CardGroup';
+import card1 from "../../util/imgs/experiencia_1.jpg";
+import card2 from "../../util/imgs/experiencia_2.jpg";
+import card3 from "../../util/imgs/experiencia_3.jpg";
+import card4 from "../../util/imgs/experiencia_4.jpg";
+import card5 from "../../util/imgs/experiencia_5.jpg";
+import card6 from "../../util/imgs/experiencia_6.jpg";
 
 function Experiencia() {
   const items = [
     {
       id: "1",
-      img_link: "",
+      img_link: "../../util/imgs/experiencia_1.jpg",
       title: "Seguros Empresariais",
       description:
         "Garanta o sucesso do seu negócio com seguros que protegem os bens, os veículos, as mercadorias transportadas e o meio ambiente.",
@@ -14,7 +20,7 @@ function Experiencia() {
     },
     {
       id: "2",
-      img_link: "",
+      img_link: {card2},
       title: "Benefícios",
       description:
         "Planos de saúde e assistência odontológica empresarial, seguro Acidentes Pessoais Estudante eplanos de previdência privada.",
@@ -22,7 +28,7 @@ function Experiencia() {
     },
     {
       id: "3",
-      img_link: "",
+      img_link: {card3},
       title: "Seguro de vida",
       description:
         "Apólices sob medida, com tranquilidade e garantias que amparam você e sua família mesmo nos momentos mais difíceis.",
@@ -30,7 +36,7 @@ function Experiencia() {
     },
     {
       id: "4",
-      img_link: "",
+      img_link: {card4},
       title: "Seguros Patrimoniais",
       description:
         "Segurança para os seus bens e tranquilidade para sua família.  A MPL oferece produtos específicos para cada segmento.",
@@ -38,7 +44,7 @@ function Experiencia() {
     },
     {
       id: "5",
-      img_link: "",
+      img_link: {card5},
       title: "Ambiental Especial para TRR",
       description:
         "Tranquilidade garantida preservando o meio ambiente. São 6 coberturas em um única apólice. Danos materiais de responsabilidade civil ambiental.",
@@ -46,7 +52,7 @@ function Experiencia() {
     },
     {
       id: "6",
-      img_link: "",
+      img_link: {card6},
       title: "Ambiental para postos",
       description:
         "Produto EXCLUSIVO criado especialmente para postos de combustíveis oferecendo o diferencial da cobertura de Responsabilidade Civil Ambiental.",
