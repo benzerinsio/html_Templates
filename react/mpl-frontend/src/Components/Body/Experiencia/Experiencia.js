@@ -1,5 +1,6 @@
 import "./Experiencia.css";
 import CardComponent from "./CardComponent";
+import CardGroup from 'react-bootstrap/CardGroup';
 
 function Experiencia() {
   const items = [
@@ -58,14 +59,14 @@ function Experiencia() {
       <Card data={items[4]}/>
       <Card data={items[5]}/>*/
   return (
-    <div>
+    <CardGroup>
       <CardComponent data={items[0]}/>
       <CardComponent data={items[1]}/>
       <CardComponent data={items[2]}/>
       <CardComponent data={items[3]}/>
       <CardComponent data={items[4]}/>
       <CardComponent data={items[5]}/>
-    </div>
+    </CardGroup>
   );
 }
 
